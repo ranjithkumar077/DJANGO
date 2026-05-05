@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+p{
+   background-color:bisque; 
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #007BFF, #00C6FF);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #3e8cdf, #0096c7);
+}
+
+    h1,h2{
+        background-color: bisque;
+        color: black;
+    }
+    body{
+        background-color:brown;
+    }
+
+</style>
+</head>
+<body>
+    <div> 
+    <h1>Welcome {{name}}!</h1>
+    <p>welcome to chittoor
+        and your age is{{age}}
+    </p>
+    {% if age > 18 %}
+    <h2>You are Eligible for voting</h2>
+    {% else %}
+    <h2>You are not Eligible for voting</h2>
+    {% endif %}
+
+    <a href="http://127.0.0.1:8000/Ind_AP/kadapa/" class="btn">IND AP Kadapa</a>
+    <a href="http://127.0.0.1:8000/Ind_Tel/hyderabad/" class="btn">IND TEL HYDERABAD</a>
+    <a href="http://127.0.0.1:8000/Ind_Tel/warangal/" class="btn">IND TEL WARANGAL</a>
+    <a href="http://127.0.0.1:8000/Ind_AP/chittoor/" class="btn">IND AP CHITTOOR</a>
+    </div>
+</body>
+</html>
